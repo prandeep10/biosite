@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Myself</title>
+
+    <!-- CSS Link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <div class="profile-button" x-cloak x-data="{ isOpen: false}">
+        <button 
+                @click="isOpen = !isOpen" 
+                @keydown.escape="isOpen = false" 
+                class="profile-show" 
+        >
+<img src="menu-button.svg" alt="" height="50px" width="50px">
+              
+
+    </button>
+        <ul x-show="isOpen"
+            @click.away="isOpen = false"
+            class="profile-menu"
+        >
+            <li>
+                <input type="hidden" value="www.instagram.com/prandeep10" id="myInput">
+                <a>
+                    
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                      </svg>
+                   
+                    <span class="ml-2">Copy Link</span>
+                    </a>
+            </li>
+            <li>
+                <a href="<?php echo ROOT_URL;?>/profile/profile.php">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="text-gray-600"><path d="M9 4.58V4c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v.58a8 8 0 0 1 1.92 1.11l.5-.29a2 2 0 0 1 2.74.73l1 1.74a2 2 0 0 1-.73 2.73l-.5.29a8.06 8.06 0 0 1 0 2.22l.5.3a2 2 0 0 1 .73 2.72l-1 1.74a2 2 0 0 1-2.73.73l-.5-.3A8 8 0 0 1 15 19.43V20a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-.58a8 8 0 0 1-1.92-1.11l-.5.29a2 2 0 0 1-2.74-.73l-1-1.74a2 2 0 0 1 .73-2.73l.5-.29a8.06 8.06 0 0 1 0-2.22l-.5-.3a2 2 0 0 1-.73-2.72l1-1.74a2 2 0 0 1 2.73-.73l.5.3A8 8 0 0 1 9 4.57zM7.88 7.64l-.54.51-1.77-1.02-1 1.74 1.76 1.01-.17.73a6.02 6.02 0 0 0 0 2.78l.17.73-1.76 1.01 1 1.74 1.77-1.02.54.51a6 6 0 0 0 2.4 1.4l.72.2V20h2v-2.04l.71-.2a6 6 0 0 0 2.41-1.4l.54-.51 1.77 1.02 1-1.74-1.76-1.01.17-.73a6.02 6.02 0 0 0 0-2.78l-.17-.73 1.76-1.01-1-1.74-1.77 1.02-.54-.51a6 6 0 0 0-2.4-1.4l-.72-.2V4h-2v2.04l-.71.2a6 6 0 0 0-2.41 1.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" class="heroicon-ui"></path></svg>
+                    <span class="ml-2">Create Profile</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+<body>
+    <div class="main">
+
+        <div class="profile-picture">
+            <img src="prandeep.jpg" alt="" height="150px" width="150px">
+        </div>
+
+
+        <div class="name-and-description">
+            <h2>Prandeep Chutia</h2>
+            <p>I'm a Web Developer, expertise in BackEnd and FrontEnd Development.</p>
+        </div>
+
+
+        <div class="links">
+            <ul>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Github</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+<footer>
+copyright &copy;2023 aboutmyself.com
+</footer>
+
+</html>

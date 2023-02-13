@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: radial-gradient(#272727, #1b1b1b);
+}
+
+
+
+footer{
+    text-align: center;
+    background: linear-gradient(gray,rgb(87, 82, 82));
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name-and-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0 40px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name-and-description h2{
+    color: white;
+}
+
+.name-and-description p{
+    padding-top: 10px;
+    color: beige;
+}
+
+.profile-picture{
+    margin-top: 40px;
+}
+
+.profile-picture img{
+    border-radius: 50%;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+
+.links ul li{
+    background: linear-gradient(gray,rgb(87, 82, 82));
+    width: 400px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(212, 204, 204);
+}
+
+@media (max-width:500px){
+    .links ul li{
+        width: 320px;
+        height: 30px;
+    }
+
+    .name-and-description{
+        padding: 0 7px 0 7px;
+        margin-bottom: 10px;
+    }
+
+    .profile-button button img{
+      height: 40px;
+      width: 40px;
+
+    }
+}
+
+.links ul li:hover{
+    width: 410px;
+    color: rgb(239, 234, 234);
+}
+
+
+
+
+
+/* Profile Button  */
+.profile-button{
+    position: relative;
+   padding-top: 15px;
+   padding-left: 15px;
+  }
+
+  .profile-show{
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-menu{
+    position: absolute;
+    background: linear-gradient(gray,rgb(87, 82, 82));
+    overflow: hidden;
+    border-radius: 20px;
+    width: 200px;
+    margin-top: 4px;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    z-index: 20;
+    font-family: 'Poppins';
+    box-shadow: 0px 0px 4px 1px rgba(106, 106, 108, 0.4);
+  }
+  
+  .profile-icon{
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile-button ul{
+    list-style: none;
+  }
+  
+  .profile-button ul li{
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .profile-button ul li a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(212, 204, 204);
+  }
+  
+  .profile-button ul li a svg{
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+    color: rgb(167, 157, 157);
+  }
+  
+  .profile-button ul li:hover{
+    background-color: rgb(207, 209, 209);
+    color: #272727;
+  }
+
+  .profile-button ul li a:hover{
+    color: #272727;
+  }
+
+  .profile-button button img{
+    background: #1b1b1b;
+    border: none;
+  }
+  
+  .profile-button button {
+    border: none;
+  }
+
+  
